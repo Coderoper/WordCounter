@@ -1,11 +1,10 @@
-<h1>To Do List</h1>
-<ul>
-  @foreach(var item in Model)
-  {
-    <li>@item.GetDescription()</li>
-  }
-</ul>
-<p><a href="/items/new">Add another item</a></p>
-<form action="/items/delete" method="post">
-  <button type="submit" name="button">Clear All Items</button>
+<h1>Word Counter</h1>
+
+<h3>Add a new sentence and word to be counted:</h3>
+<form action='/wordcounter' method='post'>
+  <label for='new-word'>City name</label>
+  <input id='new-word' name='new-word' type='text'>
+  <label for='new-sentence'>sentence</label>
+  <input id='new-sentence' name='new-sentence' type='text'>
+  <button type='submit'>Add word and sentence</button>
 </form>

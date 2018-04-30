@@ -18,7 +18,21 @@ namespace WordCounterApp.Controllers
       Assert.AreEqual("string word", placeHolder.GetWord());
       Assert.AreEqual("string sentence", placeHolder.GetSentence());
 
-
     }
+    [TestMethod]
+    public void CountTestWithDeliminators()
+    {
+      RepeatCounter newRepeatCounter = new RepeatCounter("YOu","These words repeat: you, YOU; yoU! you# You");
+
+
+      Console.WriteLine(newRepeatCounter.GetWord());
+      Console.WriteLine(newRepeatCounter.GetSentence());
+      Console.WriteLine(newRepeatCounter.GetWordCount());
+
+      Console.WriteLine(newRepeatCounter.WordCounter());
+
+      Assert.AreEqual(5, newRepeatCounter.WordCounter());
+    }
+
   }
 }
