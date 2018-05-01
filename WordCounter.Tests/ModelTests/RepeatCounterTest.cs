@@ -20,19 +20,19 @@ namespace WordCounterApp.Controllers
 
     }
     [TestMethod]
-    public void CountTestWithDeliminators()
+    public void SeperateBySpacesCount()
     {
-      RepeatCounter newRepeatCounter = new RepeatCounter("YOu","These words repeat: you, YOU; yoU! you# You");
+      RepeatCounter newRepeatCounter = new RepeatCounter("you","you you you you you");
 
 
-      Console.WriteLine(newRepeatCounter.GetWord());
-      Console.WriteLine(newRepeatCounter.GetSentence());
-      Console.WriteLine(newRepeatCounter.GetWordCount());
+      // Console.WriteLine(newRepeatCounter.GetWord());
+      // Console.WriteLine(newRepeatCounter.GetSentence());
 
       Console.WriteLine(newRepeatCounter.WordCounter());
 
       Assert.AreEqual(5, newRepeatCounter.WordCounter());
     }
+    
 
   }
 }

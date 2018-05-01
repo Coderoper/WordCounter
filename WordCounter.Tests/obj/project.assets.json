@@ -10620,11 +10620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/austinroberts/Desktop/WordCounterMaster/WordCounter.Tests/WordCounterTest.csproj",
+      "projectUniqueName": "/Users/austinroberts/Desktop/WordCounter/WordCounter.Tests/WordCounterTest.csproj",
       "projectName": "WordCounterTest",
-      "projectPath": "/Users/austinroberts/Desktop/WordCounterMaster/WordCounter.Tests/WordCounterTest.csproj",
+      "projectPath": "/Users/austinroberts/Desktop/WordCounter/WordCounter.Tests/WordCounterTest.csproj",
       "packagesPath": "/Users/austinroberts/.nuget/packages/",
-      "outputPath": "/Users/austinroberts/Desktop/WordCounterMaster/WordCounter.Tests/obj/",
+      "outputPath": "/Users/austinroberts/Desktop/WordCounter/WordCounter.Tests/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/austinroberts/.nuget/NuGet/NuGet.Config"
@@ -10638,8 +10638,8 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "/Users/austinroberts/Desktop/WordCounterMaster/WordCounter/WordCounter.csproj": {
-              "projectPath": "/Users/austinroberts/Desktop/WordCounterMaster/WordCounter/WordCounter.csproj"
+            "/Users/austinroberts/Desktop/WordCounter/WordCounter/WordCounter.csproj": {
+              "projectPath": "/Users/austinroberts/Desktop/WordCounter/WordCounter/WordCounter.csproj"
             }
           }
         }
