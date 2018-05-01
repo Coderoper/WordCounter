@@ -1,4 +1,7 @@
 <h2>Your results below:</h2>
 
 <h3>The number of times @Model.GetWord() appears in @Model.GetSentence() is
-@Model.WordCounter()</h3>
+@Model.WordCounter()</h3><br>
+<form action="/results/delete" method="post">
+  <button type="submit" name="button">Clear All Items</button>
+</form>

@@ -7,14 +7,14 @@ namespace WordCounterApp.Models
   {
     private string _word;
     private string _sentence;
-    private int _wordCount;
+    private static int _wordCount;
     // private static List<RepeatCounter>_words = new List<RepeateCounter>{};
 
     public RepeatCounter(string newWord, string newSentence)
     {
-      _word = newWord;
-      _sentence = newSentence;
-      _wordCount=0;
+      _word = newWord.ToLower();
+      _sentence = newSentence.ToLower();
+      _wordCount = 0;
     }
     public int GetWordCount()
     {
@@ -46,6 +46,7 @@ namespace WordCounterApp.Models
     {
       int wordAmount=0;
 
+
       char[] delimiters = { ' ', ',', '.', ':', '!', '\t' };
       string[] words=_sentence.Split(delimiters);
 
@@ -60,10 +61,11 @@ namespace WordCounterApp.Models
       this.SetWordCount(wordAmount);
       return wordAmount;
     }
-    // public static void ClearAll()
-    //  {
-    //    RepeatCounter.Clear();
-    //  }
+
+    public static void ClearAll()
+     {
+       _wordCount=0;
+     }
 
   }
 }

@@ -25,12 +25,13 @@ namespace WordCounterApp.Controllers
       {
         return View("Result");
       }
-      // [HttpPost("/results/delete")]
-      //   public ActionResult DeleteAll()
-      //   {
-      //       newRepeatCounter.Clear();
-      //       return View();
-      //   }
+      [HttpPost("/results/delete")]
+      public ActionResult DeleteAll()
+      {
+        // RepeatCounter newRepeatCounter =new RepeatCounter();
+        RepeatCounter.ClearAll();
+        return View();
+      }
 
     }
 
