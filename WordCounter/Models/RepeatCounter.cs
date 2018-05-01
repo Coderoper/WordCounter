@@ -60,5 +60,10 @@ namespace WordCounterApp.Models
       this.SetWordCount(wordAmount);
       return wordAmount;
     }
+    // public static void ClearAll()
+    //  {
+    //    RepeatCounter.Clear();
+    //  }
+
   }
 }
