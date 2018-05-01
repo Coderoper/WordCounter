@@ -46,8 +46,8 @@ namespace WordCounterApp.Models
     {
       int wordAmount=0;
 
-      // char[] delimiters = { ' ', ',', '.', ':', '!', '\t' };
-      string[] words=_sentence.Split();
+      char[] delimiters = { ' ', ',', '.', ':', '!', '\t' };
+      string[] words=_sentence.Split(delimiters);
 
       for(int x = 0; x<words.Length; x++)
       {

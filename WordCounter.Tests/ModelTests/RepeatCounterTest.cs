@@ -35,8 +35,8 @@ namespace WordCounterApp.Controllers
     [TestMethod]
     public void SeperateByDelimiters()
     {
-      RepeatCounter newRepeatCounter = new RepeatCounter("you", " you, you! you. you: ");
-      Assert.AreEqual(5, newRepeatCounter.WordCounter());
+      RepeatCounter newRepeatCounter = new RepeatCounter("you", "you, you. you! you: you you");
+      Assert.AreEqual(6, newRepeatCounter.WordCounter());
 
     }
   }
