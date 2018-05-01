@@ -8,8 +8,9 @@
 A program the takes a user input for a sentence and a word and finds the number of instances of that word in that sentence.
 Specs
 * 1. Separate a sentence by spaces. Input: Sentence, Output: List of words.
-
-* 2. Find a word within the sentence Input: word Output: number of words in the list
+* 2. Seperate a sentence by a delimters: { ' ', ',', '.', ':', '!', '\t' }
+* 3. Convert sentence into lowercase for filtering.
+* 4. Find a word within the sentence Input: word Output: number of words in the list
 
 
 ## Setup/Installation Requirements

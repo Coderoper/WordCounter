@@ -42,25 +42,22 @@ namespace WordCounterApp.Models
     {
       _word = newWord;
     }
-    public static int WordCounter(RepeatCounter newRepeatCounter)
+    public int WordCounter()
     {
-      string newSentence = newRepeatCounter.GetSentence();
-      string newWord = newRepeatCounter.GetWord();
-
       int wordAmount=0;
 
-      char[] delimiters = { ' ', ',', '.', ':', '!', '\t' };
-      string[] words=newSentence.Split(delimiters);
+      // char[] delimiters = { ' ', ',', '.', ':', '!', '\t' };
+      string[] words=_sentence.Split();
 
       for(int x = 0; x<words.Length; x++)
       {
-        if (words[x] == newWord){
+        if (words[x] == _word){
           wordAmount++;
-          Console.WriteLine(wordAmount);
+          // Console.WriteLine(wordAmount);
 
         } else{}
       }
-      newRepeatCounter.SetWordCount(wordAmount);
+      this.SetWordCount(wordAmount);
       return wordAmount;
     }
   }

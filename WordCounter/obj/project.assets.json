@@ -9524,11 +9524,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/austinroberts/Desktop/WordCounterMaster/WordCounter/WordCounter.csproj",
+      "projectUniqueName": "/Users/austinroberts/Desktop/WordCounter/WordCounter/WordCounter.csproj",
       "projectName": "WordCounter",
-      "projectPath": "/Users/austinroberts/Desktop/WordCounterMaster/WordCounter/WordCounter.csproj",
+      "projectPath": "/Users/austinroberts/Desktop/WordCounter/WordCounter/WordCounter.csproj",
       "packagesPath": "/Users/austinroberts/.nuget/packages/",
-      "outputPath": "/Users/austinroberts/Desktop/WordCounterMaster/WordCounter/obj/",
+      "outputPath": "/Users/austinroberts/Desktop/WordCounter/WordCounter/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/austinroberts/.nuget/NuGet/NuGet.Config"

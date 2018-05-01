@@ -10,7 +10,7 @@ namespace WordCounterApp.Controllers
       [HttpGet("/")]
       public ActionResult Index()
       {
-        return View(CreateForm);
+        return View("CreateForm");
       }
 
       [HttpGet("/wordcounter/new")]
@@ -23,7 +23,7 @@ namespace WordCounterApp.Controllers
       public ActionResult Create()
       {
         RepeatCounter newRepeatCounter =new RepeatCounter(Request.Form["new-word"], Request.Form["new-string"]);
-        
+
 
         return View("Index");
       }

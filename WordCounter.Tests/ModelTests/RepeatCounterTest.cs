@@ -32,7 +32,12 @@ namespace WordCounterApp.Controllers
 
       Assert.AreEqual(5, newRepeatCounter.WordCounter());
     }
-    
+    [TestMethod]
+    public void SeperateByDelimiters()
+    {
+      RepeatCounter newRepeatCounter = new RepeatCounter("you", " you, you! you. you: ");
+      Assert.AreEqual(5, newRepeatCounter.WordCounter());
 
+    }
   }
 }
