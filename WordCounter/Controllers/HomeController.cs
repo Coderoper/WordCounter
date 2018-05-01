@@ -10,24 +10,21 @@ namespace WordCounterApp.Controllers
       [HttpGet("/")]
       public ActionResult Index()
       {
-        return View("CreateForm");
-      }
-
-      [HttpGet("/wordcounter/new")]
-      public ActionResult CreateForm()
-      {
         return View();
       }
 
-      [HttpPost("/wordcounter")]
-      public ActionResult Create()
+      [HttpPost("/submit")]
+      public ActionResult Submit()
       {
-        RepeatCounter newRepeatCounter =new RepeatCounter(Request.Form["new-word"], Request.Form["new-string"]);
+        RepeatCounter newRepeatCounter =new RepeatCounter(Request.Form["new-word"], Request.Form["new-sentence"]);
 
-
-        return View("Index");
+        return View("Result", newRepeatCounter);
       }
-
+      [HttpGet("/result")]
+      public ActionResult Result()
+      {
+        return View("Result");
+      }
 
 
     }
